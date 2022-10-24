@@ -29,29 +29,21 @@ about_button_label: get hello # the label on the button
 
 # By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing the order in which each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
 
-portfolio: work # the heading for your portfolio and title of your YAML file
-portfolio_description: you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. # a description to be desplayed below the heading and above the content
+portfolio: Publications # the heading for your portfolio and title of your YAML file
+portfolio_description:  # a description to be desplayed below the heading and above the content
 
 # optional CTA section --------------------------------------------------
 
 # By declaring these variables, you can include a CTA section.
 cta: connect # the heading for your CTA section
-cta_description: questions, comments, or concerns? please don't hesitate to reach out. # a description to be desplayed below the heading and above the content
+cta_description: Questions, comments, and inquiries? Don't hesitate to reach out. # a description to be desplayed below the heading and above the content
 cta_button: mailto:claudio.fanconi@outlook.com # a link to an external website or to media
 cta_button_label: contact # the label on the button
 
 ---			
 [//]: # (write a bit about yourself here)
-### why **hello**?  
+Hi, I am Claudio! I'm an M. Sc. student at ETH Zürich studying Information Technology and Electrical Engineering with a focus on Machine Learning (ML). I conducted my Master's thesis at Stanford in biomedical informatics on predictive uncertainty and natural language processing for identifying patients at risk of acute care. I am passionate about (i) ML applied to high-stakes environment such as medicine, (ii) uncertainty estimation with Bayesian models, and (iii) interpretability of modern deep learning architectures. Besides, I have also worked on few projects involving variational networks for image registration, multi-task learning for autonomous driving, and risk predictions based on BERT models.
 
-### **hello** has a simple goal: to make GitHub Pages accessible to everyone.  
-  
-**hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
-development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
-who want to start building their personal website on [GitHub Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
-  
-
-The default layout of **hello** is a streamlined single page with three major customizable sections: a required "about" section, an optional portfolio, and an optional CTA. Using [Liquid](https://shopify.github.io/liquid/) variables declared by in the config and index files, **hello** offers an easy-to-use design where all customizations necessary for a basic personal website can be written in [Markdown](https://www.markdownguide.org/basic-syntax/).  
+Before starting my Master's, I interned as a machine learning engineer at IBM and as a management consultant at McKinsey & Company. Previously, I completed my B.Sc. in Electrical Engineering and Information Technology, also at ETH Zürich.
 
 
-**hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.
