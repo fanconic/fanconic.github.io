@@ -12,7 +12,7 @@ background_image: /images/bernina.jpg
 # page_url: /hello # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
-favicon: /assets/ico/probabolity.ico
+favicon: /assets/ico/probability.ico
 
 # social media
 gscholar_username: citations?user=Uko0QY4AAAAJ # # your twitter handle
@@ -30,7 +30,7 @@ about_button_label: get hello # the label on the button
 # By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing the order in which each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
 
 portfolio: Publications # the heading for your portfolio and title of your YAML file
-portfolio_description:  # a description to be desplayed below the heading and above the content
+portfolio_description: Here you can find a list of publications and preprints. # a description to be desplayed below the heading and above the content
 
 # optional CTA section --------------------------------------------------
 
