@@ -1,17 +1,16 @@
+--- # required, replace with your own information -----
 # _config.yml
 
-# required, replace with your own information -----
-title: Hello for Github Pages
-author: Sara Gong
-description: > 
-  A minimalist template for designing a personal GitHub Pages website - without typing a single line of code.
-baseurl: ""
-
+title: Claudio Fanconi
+author: Claudio Fanconi
+description: >
+  Personal webpage of Claudio Fanconi
+baseurl: "fanconic.github.io"
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  
+
 #---------------------------------------------------
 
 exclude:
@@ -20,4 +19,3 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-
