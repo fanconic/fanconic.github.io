@@ -1,0 +1,46 @@
+<!-- begin post --> 
+{% assign author = site.authors[post.author] %}
+
+<div class="col-md-4 grid-item">
+<div class="card">
+    <a href="{{ post.url | absolute_url }}">
+        {% if post.image %} <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+        <!-- <h4 class="card-text">{{ post.excerpt | strip_html | truncatewords:30 }}</h4> -->
+        <h4 class="card-text">{{ post.description }}</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                <!-- {% if post.author %} -->
+                <!-- <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                </span> -->                
+                <span class="author-meta">
+                {% if post.github %}
+                <a class="highlight" href="{{ post.github }}"><button type="button" class="btn btn-success btn-sm postbox-btn" style="font-size:12px;">GITHUB</button></a>                
+                {% endif %}
+                {% if post.demo %}
+                <a class="highlight" href="{{ post.demo }}"><button type="button" class="btn btn-warning btn-sm postbox-btn" style="font-size:12px;">DEMO</button></a>                
+                {% endif %}
+                {% if post.report %}
+                <a class="highlight" href="{{ post.report }}"><button type="button" class="btn btn-info btn-sm postbox-btn" style="font-size:12px;">REPORT</button></a>                
+                {% endif %}
+                {% if post.paper %}
+                <a class="highlight" href="{{ post.paper }}"><button type="button" class="btn btn-info btn-sm postbox-btn" style="font-size:12px;">PAPER</button></a>                
+                {% endif %}
+                {% if post.lb %}
+                <a class="highlight" href="{{ post.lb }}"><button type="button" class="btn btn-danger btn-sm postbox-btn" style="font-size:12px;">LB</button></a>                
+                {% endif %}
+                <!-- <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/> -->
+                <!-- {% endif %} -->
+                <!-- <span class="post-date">{{ post.date | date_to_string }}</span> -->
+                </span>
+                <span class="post-read-more"><a href="{{ post.url | absolute_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->

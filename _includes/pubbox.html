@@ -1,0 +1,44 @@
+<!-- begin publication --> 
+{% assign author = site.authors[pub.author] %}
+
+<div class="col-md-12 grid-item">
+<div class="card row">
+<div class="d-flex align-items-center flex-sm-row flex-column">
+
+    <div class="card-block">
+        <h2 class="card-title"><a href="{{ pub.link | absolute_url }}">{{ pub.title }}</a></h2>
+        <h4 class="card-text-auth">{{ pub.paperauthors }}</h4>
+        <h4 class="card-text">{{ pub.venue }}
+            {% if pub.additional %}
+            <br/><span class=additional>{{ pub.additional }}</span>
+            {% endif %}
+        </h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                <span class="author-meta">
+                {% if pub.link %}
+                <a class="highlight" href="{{ pub.link }}"><button type="button" class="btn btn-info btn-sm postbox-btn" style="font-size:12px;">PAPER</button></a>                
+                {% endif %}
+                {% if pub.github %}
+                <a class="highlight" href="{{ pub.github }}"><button type="button" class="btn btn-success btn-sm postbox-btn" style="font-size:12px;">CODE</button></a>                
+                {% endif %}
+                {% if pub.pdf %}
+                <a class="highlight" href="{{ pub.pdf }}"><button type="button" class="btn btn-danger btn-sm postbox-btn" style="font-size:12px;">PDF</button></a>                
+                {% endif %}
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    {% if pub.image %}
+    <div class="d-none d-md-block">
+        <a href="{{ pub.link | absolute_url }}">
+            <img class="img-fluid img-pub" src="{{ site.baseurl }}/{{ pub.image }}" alt="{{ pub.title }}">
+        </a>
+    </div>
+    {% endif %}
+    
+</div>
+</div>
+</div>
+<!-- end publication -->

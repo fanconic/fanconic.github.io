@@ -1,21 +1,49 @@
---- # required, replace with your own information -----
-# _config.yml
+# Site
+name: "Claudio Fanconi"
+title: "Claudio Fanconi"
+description: "My Personal Website"
+meta_description: "My Personal Website"
+logo: "assets/images/logo.png"
+favicon: "assets/images/favicon.ico"
+paginate: 6
+paginate_path: "/projects/page:num/"
+baseurl: ""
+email: "fanconic@gmail.com"
+#google_analytics: "UA-141139264-1"
+disqus: "myrah"
+# sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
 
-title: Claudio Fanconi
-author: Claudio Fanconi
-description: >
-  Personal webpage of Claudio Fanconi
-baseurl: "fanconic.github.io"
+collections:
+  pubs:
+    title: Pulications
+    output: True
+
+# Authors
+authors:
+  fanconic:
+    name: Claudio Fanconi
+    display_name: Claudio
+    email: fanconic@gmail.com
+    web: https://www.linkedin.com/in/claudio-fanconi/
+    linkedin: https://www.linkedin.com/in/claudio-fanconi/
+    description: "Machine Learning Enthusiast"
+
+# Plugins
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
 
-#---------------------------------------------------
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: "/category/:name/"
 
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
+# Other
+markdown: kramdown
+highlighter: rouge

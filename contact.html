@@ -1,0 +1,32 @@
+---
+layout: default
+title: Contact
+comments: false
+---
+<section>
+
+<div class="section-title">
+    <h2><span>Contact</span></h2>
+</div>
+    
+<form action="https://formspree.io/{{site.email}}" method="POST">
+    
+    <div class="form-group row">
+
+        <div class="col-md-6">
+            <input class="form-control" type="text" name="name" placeholder="Name">
+        </div>
+
+        <div class="col-md-6">
+            <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address">
+        </div>
+
+    </div>
+
+    <textarea rows="18" class="form-control mb-3" name="message" placeholder="Message"></textarea>
+    
+    <input class="btn btn-success" type="submit" value="Send">
+
+</form>
+
+</section>
