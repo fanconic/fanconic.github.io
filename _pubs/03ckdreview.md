@@ -1,7 +1,7 @@
 ---
 title: "Predict, Diagnose, and Treat Chronic Kidney Disease with Machine Learning: a Systematic Literature Review"   
 author: fanconic
-paperauthors: Francesco Sanmarchi, Claudio Fanconi, Davide Golinelli, Davide Gori, Tina Hernandez-Boussard & Angelo Capodici
+paperauthors: Francesco Sanmarchi, Claudio Fanconi, Davide Golinelli, Davide Gori, Tina Hernandez-Boussard, Angelo Capodici
 categories: [ Chronic Kidney Desease, Machine Learning, Systematic Review]
 image: assets/images/ckdreview_2.webp  
 venue:  Journal of Nephrology
