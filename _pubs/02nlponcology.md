@@ -7,5 +7,5 @@ image: assets/images/nlp_onc.png
 venue:  AMIA 2023 Informatics Summit
 link: https://arxiv.org/abs/2209.13860
 pdf: https://arxiv.org/pdf/2209.13860
-github: https://github.com/su-boussard-lab/bert-for-acu
+github: https://github.com/su-boussard-lab/nlp-for-acu
 ---
