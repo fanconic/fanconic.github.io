@@ -4,8 +4,8 @@ author: fanconic
 paperauthors: Claudio Fanconi*, Moritz Vandenhirtz*, Severin Husmann, Julia E. Vogt
 categories: [ Natural Language Processing, Interpretability, Prototype Learning ]
 image: assets/images/thisreadslikethat.png 
-venue:  Conference on Empirical Methods in Natural Language Processing, EMNLP 2023
-link: https://arxiv.org/abs/2310.17010
-pdf: https://arxiv.org/pdf/2310.17010.pdf
+venue:  Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing
+link: https://aclanthology.org/2023.emnlp-main.869/
+pdf: https://aclanthology.org/2023.emnlp-main.869.pdf
 github: https://github.com/fanconic/this_reads_like_that
 ---
