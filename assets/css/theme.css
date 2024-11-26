@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    color: #2d58f3;
+    color: #84bedd;
 }
 
 a,
@@ -896,8 +896,8 @@ a.btn {
 }
 
 .btn.follow {
-    border-color: #2d58f3;
-    color: #2d58f3;
+    border-color: #84bedd;
+    color: #84bedd;
     padding: 3px 10px;
     text-align: center;
     border-radius: 999em;
@@ -908,8 +908,8 @@ a.btn {
 }
 
 .btn.subscribe {
-    background-color: #2d58f3;
-    border-color: #2d58f3;
+    background-color: #84bedd;
+    border-color: #84bedd;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     border-radius: 30px;
@@ -954,8 +954,8 @@ a.btn {
 }
 
 .alertbar input[type="submit"] {
-    background-color: #2d58f3;
-    border: 1px solid #2d58f3;
+    background-color: #84bedd;
+    border: 1px solid #84bedd;
     color: rgba(255, 255, 255, 1);
     fill: rgba(255, 255, 255, 1);
     font-size: 0.85rem;
