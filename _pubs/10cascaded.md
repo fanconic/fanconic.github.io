@@ -1,5 +1,5 @@
 ---
-title: "Towards a Cascaded LLM Framework for Cost-effective Human-AI Decision-Making"
+title: "Cascaded Language Models for Cost-effective Human-AI Decision-Making"
 author: fanconic
 paperauthors: Claudio Fanconi, Mihaela van der Schaar
 categories: [ Natural Language Processing , Multi Agent Systems ]
