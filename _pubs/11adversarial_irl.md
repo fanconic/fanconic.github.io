@@ -1,5 +1,5 @@
 ---
-title: "Learning a Dense Reasoning Reward Model from Expert Demonstration via Inverse Reinforcement Learning"
+title: "Learning Reasoning Reward Models from Expert Demonstration via Inverse Reinforcement Learning"
 author: fanconic
 paperauthors: Claudio Fanconi, Nicolas Astorga, Mihaela van der Schaar
 categories: [ Natural Language Processing , Large Language Models, Inverse Reinforcement Learning ]
