@@ -3,146 +3,212 @@ layout: default
 title: Home
 ---
 
-<!-- Home Jumbotron
-================================================== -->
-<section class="intro full-width">
-    <div class="wrapintro">
-        <img src="{{ site.baseurl }}/assets/images/fanconic_2.jpg" class="rounded-circle profile-img"
-            alt="Claudio Fanconi">
-        <h2>Claudio Fanconi</h2>
-        <hr class="intro-hr" />
-        <p class="degree">Ph.D. Student in Machine Learning, University of Cambridge</p>
-
-        <!-- CV Link Section -->
-        <div style="text-align: center; margin-top: 10px;">
-            <a href="assets/documents/resume_claudio_fanconi.pdf" class="btn" style="
-                font-size: 0.9em; 
-                text-decoration: none; 
-                color: #12a0ec; 
-                border: 1px solid #12a0ec; 
-                padding: 8px 16px; 
-                border-radius: 4px; 
-                background-color: white;
-                transition: background-color 0.3s, color 0.3s;">
-                <i class="fa fa-file-text"></i> CV
-            </a>
+<section class="homepage">
+    <article class="homepage-card homepage-hero">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class="home-profile">
+                    <img src="{{ site.baseurl }}/assets/images/fanconic_2.jpg" class="home-profile-image" alt="Claudio Fanconi">
+                    <h1 class="home-name">Claudio Fanconi</h1>
+                    <p class="home-role">Ph.D. Student in Machine Learning, University of Cambridge</p>
+                    <div class="home-cta-group">
+                        <a href="{{ site.baseurl }}/assets/documents/resume_claudio_fanconi.pdf" class="btn btn-sm home-btn home-btn-cv">
+                            <i class="fa fa-file-text"></i> CV
+                        </a>
+                        <a href="{{ site.baseurl }}/publications/" class="btn btn-info btn-sm home-btn">Publications</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="home-summary">
+                    <p>
+                        Hello! I am a third-year PhD student in Machine Learning and Artificial Intelligence at the
+                        <a href="https://www.cam.ac.uk/">University of Cambridge</a>, advised by
+                        <a href="https://www.vanderschaar-lab.com/prof-mihaela-van-der-schaar/">Mihaela van der Schaar</a>.
+                    </p>
+                    <p>
+                        Previously, I graduated with a Bachelor's and Master's from
+                        <a href="https://ethz.ch/de.html">ETH Zurich</a> in Information Technology and Electrical Engineering,
+                        with a focus on Machine Learning. I conducted my Master's thesis under the supervision of
+                        <a href="https://med.stanford.edu/boussard-lab.html">Tina Hernandez-Boussard</a> at
+                        <a href="https://www.stanford.edu/">Stanford University</a>, researching predictive uncertainty and
+                        natural language processing to identify patients at risk of acute care use.
+                    </p>
+                    <p>In my PhD, I investigate how AI can enhance decision-making, focusing on:</p>
+                    <ul class="home-focus-list">
+                        <li>Understanding and quantifying reasoning in LLMs (e.g. through inverse reinforcement learning).</li>
+                        <li>Analysing frameworks for collaboration between multiple LLMs and experts.</li>
+                        <li>Developing methods for personalisation to improve LLM effectiveness.</li>
+                    </ul>
+                    <p>Reach out to me with anything you want to talk about.</p>
+                    <p>
+                        Additionally, please check out the <a href="https://fanconi.org">Fanconi Cancer Foundation</a> and their
+                        initiatives against Fanconi Anemia.
+                    </p>
+                </div>
+            </div>
         </div>
+    </article>
 
-        <br />
-        <p class="bio" style="font-size: 0.9em;">
-            Hello! I am second-year PhD student in Machine Learning and Artificial Intelligence at the <a
-                href="https://www.cam.ac.uk/">University of
-                Cambridge</a> advised by <a href="https://www.vanderschaar-lab.com/prof-mihaela-van-der-schaar/">Mihaela
-                van der Schaar</a>.<br /> <br />
-            Previously, I graduated with a Bachelor's and Master's from <a href="https://ethz.ch/de.html">ETH
-                Zürich</a> in Information Technology and Electrical Engineering with a focus on Machine Learning (ML). I
-            conducted my Master's thesis under the supervision of <a
-                href="https://med.stanford.edu/boussard-lab.html">Tina Hernandez-Boussard</a> at
-            <a href="https://www.stanford.edu/">Stanford University</a>, researching predictive uncertainty and natural
-            language processing to identify patients
-            at risk of
-            acute care use.<br /><br />
-            In my PhD I am researching how AI can be used to enhance decision-making. More specifically, I am investigating at these areas:
-            <br />(i) Understanding and quantifying reasoning in LLMs (e.g. through inverse reinforcement learning)
-            <br />(ii) Analysing frameworks for collaboration between multiple LLMs and experts
-            <br />(iii) Developing methodologies for personalisation to enhance the effectiveness of LLMs.
-
-        <p class="bio" style="font-size: 0.9em;">Reach out to me with anything you want to talk about!</p>
-
-        <p class="bio" style="font-size: 0.9em;">Additionally, please check out the <a
-                href="https://fanconi.org">Fanconi Cancer Foundation</a>
-            and their initiatives against Fanconi Anemia.</p>
-        <br />
-
-
-        <div class="wrapintro-title" style="text-align: left; font-size: 0.9em;">
-            <h2><span>Updates</span></h2>
-            <ul>
-                    <li><b>(2026/03)</b> 📝 First-author paper accepted (poster) at the <a
-                            href="https://sites.google.com/view/iclr-2026-llmreasoning">ICLR Workshop on LLM Reasoning</a> (<a href="https://arxiv.org/pdf/2510.01857">Paper</a>):
-                    Researches adversarial inverse RL to elicit and quantify reasoning in LLMs.
-                </li>
-                <li><b>(2026/03)</b> 📝 Paper with <a href="https://www.linkedin.com/in/paulius-rauba">Paulius</a> accepted (spotlight) at the <a href="https://recursive-workshop.github.io/">ICLR Workshop on Recursive Self-Improvement</a> (<a href="https://openreview.net/pdf?id=aY5kmaNrwB">Paper</a>):
-                    Investigates tiny autoregressive recursive networks.
-                </li>
-                <li><b>(2025/09)</b> 📝 First-author paper accepted (poster) at <a
-                        href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a> (<a
-                        href="https://arxiv.org/abs/2506.11887">Paper</a>): Researches cost-efficient
-                    cascaded-LLM Systems for decision-making.
-                </li>
-                <li><b>(2025/06)</b> 📝 Co-first-author paper accepted (oral, top 10%) at the <a
-                        href="https://sites.google.com/view/mhf-icml2025/home">ICML 2025 Workshop on AI Alignment</a>
-                    together with <a href="https://kasia-kobalczyk.github.io/">Kasia</a>
-                    (<a href="https://arxiv.org/abs/2412.13998">Paper</a>): Develops a method for few-shot steerable
-                    alignment of rewards and policy models with neural processes.
-                </li>
-                <li><b>(2024/09)</b> 📝 Co-first-author paper accepted (poster) at <a
-                        href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a>
-                    (<a href="https://arxiv.org/pdf/2406.08414">Paper</a>): Demonstrates LLMs generating optimisation
-                    algorithms for their preference learning.
-                </li>
-                <li><b>(2024/07)</b> 📝 Published in <a href="https://academic.oup.com/jamia">JAMIA</a>
-                    (<a
-                        href="https://academic.oup.com/jamia/article-abstract/31/10/2255/7715991?redirectedFrom=fulltext&login=false">Paper</a>):
-                    Demonstrates BERT models can effectively identify depression concerns in cancer patients' portal
-                    messages.
-                </li>
-                <li><b>(2024/04)</b> 🎉 I have officially started a PhD in Machine Learning at the University of
-                    Cambridge under the supervision of Mihaela van der Schaar.
-                </li>
-            </ul>
+    <div class="row homepage-grid">
+        <div class="col-lg-8">
+            <article class="homepage-card">
+                <h2 class="home-section-title">Updates</h2>
+                <ul class="home-updates-list">
+                    <li class="home-update-item">
+                        <span class="home-update-date">2026/03</span>
+                        <div class="home-update-content">
+                            First-author paper accepted (oral) at the
+                            <a href="https://sites.google.com/view/iclr-2026-llmreasoning">ICLR Workshop on LLM Reasoning</a>
+                            (<a href="https://arxiv.org/pdf/2510.01857">paper</a>): adversarial inverse RL for eliciting and quantifying reasoning in LLMs.
+                        </div>
+                    </li>
+                    <li class="home-update-item">
+                        <span class="home-update-date">2026/03</span>
+                        <div class="home-update-content">
+                            Paper with <a href="https://www.linkedin.com/in/paulius-rauba">Paulius</a> accepted (spotlight) at the
+                            <a href="https://recursive-workshop.github.io/">ICLR Workshop on Recursive Self-Improvement</a>
+                            (<a href="https://openreview.net/pdf?id=aY5kmaNrwB">paper</a>): tiny autoregressive recursive networks.
+                        </div>
+                    </li>
+                    <li class="home-update-item">
+                        <span class="home-update-date">2025/09</span>
+                        <div class="home-update-content">
+                            First-author paper accepted (poster) at <a href="https://neurips.cc/Conferences/2025">NeurIPS 2025</a>
+                            (<a href="https://arxiv.org/abs/2506.11887">paper</a>): cost-efficient cascaded LLM systems for decision-making.
+                        </div>
+                    </li>
+                    <li class="home-update-item">
+                        <span class="home-update-date">2025/06</span>
+                        <div class="home-update-content">
+                            Co-first-author paper accepted (oral, top 10%) at the
+                            <a href="https://sites.google.com/view/mhf-icml2025/home">ICML 2025 Workshop on AI Alignment</a>,
+                            together with <a href="https://kasia-kobalczyk.github.io/">Kasia</a>
+                            (<a href="https://arxiv.org/abs/2412.13998">paper</a>): few-shot steerable alignment of rewards and policies with neural processes.
+                        </div>
+                    </li>
+                    <li class="home-update-item">
+                        <span class="home-update-date">2024/09</span>
+                        <div class="home-update-content">
+                            Co-first-author paper accepted (poster) at <a href="https://neurips.cc/Conferences/2024">NeurIPS 2024</a>
+                            (<a href="https://arxiv.org/pdf/2406.08414">paper</a>): LLMs generating optimisation algorithms for preference learning.
+                        </div>
+                    </li>
+                    <li class="home-update-item">
+                        <span class="home-update-date">2024/04</span>
+                        <div class="home-update-content">
+                            Started PhD in Machine Learning at the University of Cambridge under the supervision of Mihaela van der Schaar.
+                        </div>
+                    </li>
+                </ul>
+            </article>
         </div>
+        <div class="col-lg-4">
+            <article class="homepage-card">
+                <h2 class="home-section-title">At A Glance</h2>
+                <ul class="home-fact-list">
+                    <li class="home-fact-item">
+                        <span class="home-fact-label">Current Role</span>
+                        <span class="home-fact-value">Ph.D. Student in Machine Learning</span>
+                    </li>
+                    <li class="home-fact-item">
+                        <span class="home-fact-label">Institution</span>
+                        <span class="home-fact-value">University of Cambridge</span>
+                    </li>
+                    <li class="home-fact-item">
+                        <span class="home-fact-label">Advisor</span>
+                        <span class="home-fact-value">Mihaela van der Schaar</span>
+                    </li>
+                    <li class="home-fact-item">
+                        <span class="home-fact-label">Main Areas</span>
+                        <ul class="home-fact-value-list">
+                            <li>Reasoning in LLMs</li>
+                            <li>Human-AI Decision-Making</li>
+                            <li>Inverse Reinforcement Learning</li>
+                        </ul>
+                    </li>
+                    <li class="home-fact-item">
+                        <span class="home-fact-label">Previous Industry Role</span>
+                        <span class="home-fact-value">Research Scientist Intern, Sony AI</span>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </div>
 
+    <article class="homepage-card">
+        <h2 class="home-section-title">Education</h2>
+        <div class="home-records">
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/cambridge.jpeg" alt="University of Cambridge">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">Ph.D. Student in Machine Learning</h3>
+                    <p class="home-record-org">University of Cambridge</p>
+                    <p class="home-record-date">Apr 2024 - Present</p>
+                </div>
+            </div>
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/stanford.jpeg" alt="Stanford University">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">Visiting Student Researcher</h3>
+                    <p class="home-record-org">Stanford University</p>
+                    <p class="home-record-date">Mar 2022 - Oct 2022</p>
+                </div>
+            </div>
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/e2.png" alt="ETH Zurich">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">M.Sc. Information Technology and Electrical Engineering</h3>
+                    <p class="home-record-org">ETH Zurich</p>
+                    <p class="home-record-date">Sept 2020 - Oct 2022</p>
+                </div>
+            </div>
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/chuk.jpeg" alt="Chinese University of Hong Kong">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">Exchange Semester</h3>
+                    <p class="home-record-org">Chinese University of Hong Kong</p>
+                    <p class="home-record-date">Sept 2018 - Dec 2018</p>
+                </div>
+            </div>
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/e2.png" alt="ETH Zurich">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">B.Sc. Information Technology and Electrical Engineering</h3>
+                    <p class="home-record-org">ETH Zurich</p>
+                    <p class="home-record-date">Sept 2016 - Aug 2019</p>
+                </div>
+            </div>
+        </div>
+    </article>
 
-
-        <div class="wrapintro-title">
-            <h2><span>Education</span></h2>
+    <article class="homepage-card">
+        <h2 class="home-section-title">Professional Experience</h2>
+        <div class="home-records">
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/sonyai.jpeg" alt="Sony AI">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">Research Scientist Intern</h3>
+                    <p class="home-record-org">Sony AI</p>
+                    <p class="home-record-date">Mar 2023 - Dec 2023</p>
+                </div>
+            </div>
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/mck.jpeg" alt="McKinsey and Company">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">Management Consulting Intern</h3>
+                    <p class="home-record-org">McKinsey and Company</p>
+                    <p class="home-record-date">Jun 2020 - Aug 2020</p>
+                </div>
+            </div>
+            <div class="home-record">
+                <img class="home-record-logo" src="{{ site.baseurl }}/assets/images/about/ibm.jpeg" alt="IBM">
+                <div class="home-record-body">
+                    <h3 class="home-record-title">Machine Learning Engineer Intern</h3>
+                    <p class="home-record-org">IBM</p>
+                    <p class="home-record-date">Oct 2019 - Mar 2020</p>
+                </div>
+            </div>
         </div>
-        <div class="wrapintro-details" style="font-size: 0.9em;">
-            <img class="rounded-circle img-responsive pull-left"
-                src="{{ site.baseurl }}/assets/images/about/cambridge.jpeg" alt="University of Cambridge">
-            <p><span style="font-weight: 700;">Ph.D. Student in Machine Learning</span><br />University of Cambridge
-                <span class="text-muted"> Apr. 2024 - Present</span>
-            </p>
-            <img class="rounded-circle img-responsive pull-left"
-                src="{{ site.baseurl }}/assets/images/about/stanford.jpeg" alt="Stanford University">
-            <p><span style="font-weight: 700;">Visiting Student Researcher</span><br />Stanford
-                University
-                <span class="text-muted"> Mar. 2022 - Oct. 2022</span>
-            </p>
-            <img class="rounded-circle img-responsive pull-left" src="{{ site.baseurl }}/assets/images/about/e2.png"
-                alt="ETH Zürich">
-            <p><span style="font-weight: 700;">M.Sc. Information Technology and Electrical
-                    Engineering</span><br />ETH
-                Zürich<span class="text-muted"> Sept. 2020 - Oct. 2022</span></p>
-            <img class="rounded-circle img-responsive pull-left" src="{{ site.baseurl }}/assets/images/about/chuk.jpeg"
-                alt="Chinese University of Hong Kong">
-            <p><span style="font-weight: 700;">Exchange Semester</span><br />Chinese University of Hong Kong
-                <span class="text-muted"> Sept. 2018 - Dec. 2018</span>
-            </p>
-            <img class="rounded-circle img-responsive pull-left" src="{{ site.baseurl }}/assets/images/about/e2.png"
-                alt="ETH Zürich">
-            <p><span style="font-weight: 700;">B.Sc. Information Technology and Electrical
-                    Engineering</span><br />ETH
-                Zürich<span class="text-muted"> Sept. 2016 - Aug. 2019</span></p>
-        </div>
-        <br />
-        <div class="wrapintro-title">
-            <h2><span>Professional Experience</span></h2>
-        </div>
-        <div class="wrapintro-details" style="font-size: 0.9em;">
-            <img class="rounded-circle img-responsive pull-left"
-                src="{{ site.baseurl }}/assets/images/about/sonyai.jpeg" alt="Sony AI">
-            <p><span style="font-weight: 700;">Research Scientist Intern</span><br /> Sony AI<span
-                    class="text-muted"></span>
-                Mar. 2023 - Dec. 2023</span></p>
-            <img class="rounded-circle img-responsive pull-left" src="{{ site.baseurl }}/assets/images/about/mck.jpeg"
-                alt="McKinsey & Company">
-            <p><span style="font-weight: 700;">Management Consulting Intern</span><br />McKinsey &
-                Company<span class="text-muted"> Jun. 2020 - Aug. 2020</span></p>
-            <img class="rounded-circle img-responsive pull-left" src="{{ site.baseurl }}/assets/images/about/ibm.jpeg"
-                alt="IBM">
-            <p><span style="font-weight: 700;">Machine Learning Engineer Intern</span><br />IBM<span class="text-muted">
-                    Oct. 2019 - Mar. 2020</span></p>
-        </div>
+    </article>
 </section>

@@ -1,5 +1,24 @@
-_site
+# Jekyll build artefacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.jekyll-metadata*
+
+# Bundler / Ruby dependency artefacts
+.bundle/
+.bundle-home/
+vendor/bundle/
+vendor/cache/
+vendor/ruby/
+*.gem
+
+# OS / editor
 .DS_Store
 *.swp
-.sass-cache
 
+# Keep paper page sources, ignore downloaded PDFs
+/papers/*
+!/papers/**/
+!/papers/**/index.md
+/papers/**/paper.pdf

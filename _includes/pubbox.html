@@ -1,44 +1,54 @@
 <!-- begin publication --> 
 {% assign author = site.authors[pub.author] %}
+{% assign paper_slug = pub.path | split: '/' | last | split: '.' | first | replace: ' copy', '' %}
+{% assign summary_url = site.baseurl | append: '/papers/' | append: paper_slug | append: '/' %}
+{% assign authors_display = pub.paperauthors | replace: 'Claudio Fanconi*', '[[CF_STAR_BOLD]]' | replace: 'Claudio Fanconi', '<strong>Claudio Fanconi</strong>' | replace: '[[CF_STAR_BOLD]]', '<strong>Claudio Fanconi*</strong>' %}
 
-<div class="col-md-12 grid-item">
-<div class="card row">
-<div class="d-flex align-items-center flex-sm-row flex-column">
+<div class="col-md-12 grid-item publication-grid-item">
+<article class="card publication-card">
+<a class="publication-card-overlay" href="{{ summary_url }}" aria-label="Open summary for {{ pub.title }}"></a>
+<div class="publication-card-inner d-flex align-items-stretch flex-column flex-md-row">
 
-    <div class="card-block">
-        <h2 class="card-title"><a href="{{ pub.link | absolute_url }}">{{ pub.title }}</a></h2>
-        <h4 class="card-text-auth">{{ pub.paperauthors }}</h4>
+    <div class="card-block publication-card-content">
+        <h2 class="card-title">
+            <a class="publication-title-link" href="{{ summary_url }}">{{ pub.title }}</a>
+        </h2>
+        <h4 class="card-text-auth">{{ authors_display }}</h4>
+        {% if pub.paperauthors contains '*' %}
+        <p class="publication-author-note"><em>* denotes equal authorship.</em></p>
+        {% endif %}
         <h4 class="card-text">{{ pub.venue }}
             {% if pub.additional %}
-            <br/><span class=additional>{{ pub.additional }}</span>
+            <br/><span class="additional">{{ pub.additional }}</span>
             {% endif %}
         </h4>
         <div class="metafooter">
             <div class="wrapfooter">
-                <span class="author-meta">
+                <span class="author-meta publication-actions">
                 {% if pub.link %}
-                <a class="highlight" href="{{ pub.link }}"><button type="button" class="btn btn-info btn-sm postbox-btn" style="font-size:12px;">PAPER</button></a>                
+                <a class="highlight publication-action-link" href="{{ pub.link }}"><button type="button" class="btn btn-info btn-sm postbox-btn">PAPER</button></a>
                 {% endif %}
                 {% if pub.github %}
-                <a class="highlight" href="{{ pub.github }}"><button type="button" class="btn btn-success btn-sm postbox-btn" style="font-size:12px;">CODE</button></a>                
+                <a class="highlight publication-action-link" href="{{ pub.github }}"><button type="button" class="btn btn-success btn-sm postbox-btn">CODE</button></a>
                 {% endif %}
                 {% if pub.pdf %}
-                <a class="highlight" href="{{ pub.pdf }}"><button type="button" class="btn btn-danger btn-sm postbox-btn" style="font-size:12px;">PDF</button></a>                
+                <a class="highlight publication-action-link" href="{{ pub.pdf }}"><button type="button" class="btn btn-danger btn-sm postbox-btn">PDF</button></a>
                 {% endif %}
+                <a class="highlight publication-action-link" href="{{ summary_url }}"><button type="button" class="btn btn-secondary btn-sm postbox-btn postbox-btn-summary">SUMMARY</button></a>
                 </span>
             </div>
         </div>
     </div>
     
     {% if pub.image %}
-    <div class="d-none d-md-block">
-        <a href="{{ pub.link | absolute_url }}">
-            <img class="img-fluid img-pub" src="{{ site.baseurl }}/{{ pub.image }}" alt="{{ pub.title }}">
+    <div class="publication-card-media">
+        <a class="publication-image-link" href="{{ summary_url }}">
+            <img class="img-fluid img-pub publication-image" src="{{ site.baseurl }}/{{ pub.image }}" alt="{{ pub.title }}" loading="lazy" decoding="async">
         </a>
     </div>
     {% endif %}
     
 </div>
-</div>
+</article>
 </div>
 <!-- end publication -->
