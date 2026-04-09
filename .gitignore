@@ -18,7 +18,3 @@ vendor/ruby/
 *.swp
 
 # Keep paper page sources, ignore downloaded PDFs
-/papers/*
-!/papers/**/
-!/papers/**/index.md
-/papers/**/paper.pdf
